@@ -1,0 +1,15 @@
+.Menu{
+    position: fixed;
+    background-color:var(--back-colorMenu);
+    width: 100%;
+    gap:20px;
+    outline: none;
+    resize: none;
+    top:80px;
+    border-radius: 15px;
+    left: 10px;
+}
+
+.Menu-panel{
+    list-style: none;
+}

@@ -1,0 +1,15 @@
+.Header{
+    background: var(--back-colorHeader);
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    /* padding-bottom: 20px; */
+}
+.imgHeader{
+        width: 110px;
+        height: 110px;
+        align-items: center;
+        border-radius: 30px;
+}

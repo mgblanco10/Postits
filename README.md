@@ -41,4 +41,51 @@ The api was made with TDD testing each logic with jasmine.
 <img src="./img/feedbackWarning.png" alt="feedback Warning" width="350"/>
 <img src="./img/feedbackAlert.png" alt="feedback Alert" width="350"/>
 
+# Technologies
+- Javascript 
+- JSX 
+- React
+- CSS
+- Node
+- Express
+- Moongoose from MongoDb 
+- Testing (Jasmine)
+- Winston
 
+# Data Model
+## User
+    name: 
+        type: String,
+        required: true
+  
+    email: 
+        type: String,
+        required: true,
+        unique: true
+
+    password: 
+        type: String,
+        required: true
+ 
+## Notes
+    user:
+        type: ObjectId,
+        required: true,
+        ref: 'User'
+    
+    text: 
+        type: String,
+        default: ''
+    
+    visibility:
+        type: String,
+        enum: ['private', 'public'],
+        default: 'private'
+
+    createdAt: 
+        type: Date,
+        default: Date.now
+    
+    modifiedAt: 
+        type: Date
+        

@@ -1,11 +1,12 @@
 .infoApp{
-    font-size: 18px;
-    color: black;
-    background:linear-gradient(107deg, rgba(234,202,88,1) 0%, rgba(0,212,255,1) 100%);
+    font-size: 16px;
+    color: var(--back-colorInfo) ;
+    background: rgba(61,227,242,0.2315519957983193) ;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
 }
 .imgInfo{
     width: 110px;

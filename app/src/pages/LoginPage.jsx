@@ -60,7 +60,7 @@ function LoginPage({onLinkClick, onLogIn, context: { handleFeedback }}) {
     return <main className="login-page container container--full container--spaced">
         <form className="form" action="https://www.google.com/search" method="get" onSubmit={handleFormSubmit}>
         <img className="imgRegister"
-                src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" />
+                src="https://cdn-icons-png.flaticon.com/512/272/272456.png" />
             <div className="form__field">
                 <label htmlFor="email">E-mail</label>
                 <input className="input" type="email" name="email" placeholder="email" id="email" />

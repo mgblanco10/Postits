@@ -4,18 +4,27 @@
 /* root change theme*/
 :root{
     --color: white;
-    --back-color: linear-gradient(82deg, rgba(62,90,231,1) 13%, rgba(70,252,251,1) 94%);
-    --back-colorNote: yellow; 
-    --back-colorHeader:rgb(116, 242, 234);
-    --back-colorMenu:rgb(116, 242, 234);
-
+    --back-color: linear-gradient(152deg, rgba(36,108,226,1) 0%, rgba(88,195,199,1) 43%, rgba(185,76,255,1) 100%);
+    --back-colorNote: rgb(50, 91, 142);
+    --back-colorHeader:  linear-gradient(152deg, rgba(180,65,116,1) 18%, rgba(43,95,157,1) 86%);
+    --back-colorMenu:  rgb(43,95,157);
+    --font-colorNote: white;
+    --color-buttonNote: white; 
+    --color-buttonFooter: white;
+    --back-colorForm: linear-gradient(152deg, rgba(43,95,157,1) 14%, rgba(234,117,170,1) 57%);
+    --back-colorInfo: white;
 }
 :root.light{
     --color: black;
-    --back-color: radial-gradient(circle, rgba(241,107,166,1) 18%, rgba(28,236,221,1) 53%, rgba(65,236,81,1) 69%, rgba(32,127,241,1) 100%);
-    --back-colorNote: rgba(28,236,221,1);
-    --back-colorHeader:rgb(236, 64, 216);
-    --back-colorMenu:rgb(236, 64, 216); 
+    --back-color: linear-gradient(346deg, rgba(170,255,225,1) 6%, rgba(154,254,247,1) 48%, rgba(121,190,255,1) 100%);
+    --back-colorNote:yellow; ;
+    --back-colorHeader:rgb(142, 248, 236);
+    --back-colorMenu:rgb(142, 248, 236);
+    --font-colorNote: black;
+    --color-buttonNote: black; 
+    --color-buttonFooter:black;
+    --back-colorForm: linear-gradient(152deg, rgba(218,242,61,0.7553615196078431) 32%, rgba(76,255,248,1) 95%);
+    --back-colorInfo: black;
 }
 *{
     font-family: Roboto;
@@ -74,13 +83,13 @@ body{
     top: 50%;
     width: 100%;
     color: var(--color);
-    font-size: 16px;   
+    font-size: 18px;   
     margin-top: 20px;
 }
 .form{
-    background: linear-gradient(107deg, rgba(234,202,88,1) 0%, rgba(0,212,255,1) 100%);
+    background: var(--back-colorForm);
     display:flex;
-    padding: 10px;
+    padding: 5px;
     flex-direction: column;
     border: 1px solid rgb(167, 208, 242);
     border-radius: 10px; 
@@ -89,7 +98,7 @@ body{
     width: 220px;
     justify-content: center;
     text-align: center;
-    gap:10px;
+    gap:5px;
 }
 .form__field{
     display:flex;
@@ -150,8 +159,7 @@ body{
 .imgRegister{
     width: 70px;
     height: 70px;
-    border-radius: 20px;
-    gap:10px;
+    gap:3px;
 }
 
 .anchor{
@@ -180,7 +188,7 @@ p{
     display: flex;
     background-color: transparent;
     border: none;
-    color: black;
+    color: var(--color-buttonFooter);
     font-size: 3rem;
     cursor: pointer;
     justify-content: center; 

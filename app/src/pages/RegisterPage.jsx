@@ -51,7 +51,7 @@ function RegisterPage({onLinkClick, context: { handleFeedback } }) {
     return (<main className="register-page container container--full container--spaced">
         <form className="form form-register" onSubmit={handleFormSubmit}>
             <img className="imgRegister"
-                src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" />
+                src="https://watchdog.hmny.io/img/login-img.0655ab51.png" />
 
             <div className="form__field">
                 <label htmlFor="name">Name</label>

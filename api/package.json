@@ -1,10 +1,11 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "postits",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "start-inspect": "node --inspect-brk src",
     "test": "npx jest --runInBand --setTimeout=60000 src/logic",
     "test-inspect": "node --inspect ./node_modules/.bin/jest --runInBand --setTimeout=60000 src/logic",
@@ -13,18 +14,23 @@
     "test-coverage": "npx jest --runInBand --setTimeout=60000 --collectCoverage src/logic",
     "populate": "node src/populate.js",
     "populate-inspect": "node --inspect-brk src/populate.js",
-    "populate-inspect-cli": "node inspect src/populate.js"
+    "populate-inspect-cli": "node inspect src/populate.js",
+    "debug": "nodemon --inspect src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Monica Blanco",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "errors": "file:../errors",
     "express": "^4.18.1",
+    "jasmine": "^4.5.0",
+    "jasmine-node": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.13.0",
     "mongoose": "^6.5.3",
+    "nodemon": "^2.0.20",
     "validators": "file:../validators",
     "winston": "^3.8.1"
   },

@@ -20,8 +20,9 @@ function InfoPage({onLinkClick}) {
             <img className="imgInfo" src="https://media0.giphy.com/media/osAcIGTSyeovPq6Xph/200w.gif?cid=82a1493bj0ogbe0skwz8to1pzm5zkzywsrfb14503z8s1swm&rid=200w.gif&ct=g"/>
         
             <p> Welcome!!! </p>
-        <p> Writing notes has never been so easy and fun...
-Press the button in the shape of a house to start </p>
+        <p> Writing notes has never been so easy and fun... 
+Save, create, edit and delete your notes without worrying.</p>
+<p>Press the house-shaped button to start. </p>
         </div>
         <IconButton text="home" onClick={handleLinkClick}/>
         {/* <a className="anchor" href="#" onClick={handleLinkClick}>Home</a> */}

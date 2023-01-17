@@ -77,7 +77,7 @@ function Settings({onCloseClick, context: { handleFeedback }}) {
 
             <form className="update-password-form form" onSubmit={handleFormSubmitPassword}>
             <img className="imgSettings"
-                src="https://www.nic.lat/wp-content/uploads/2019/01/password-big.png"/>
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Settings_%28iOS%29.png/800px-Settings_%28iOS%29.png"/>
                 <div className="form__field">
                     <label htmlFor="oldPassword">Current Password</label>
                     <input className="input" type="password" name="oldPassword" placeholder="old password" id="oldPassword" />

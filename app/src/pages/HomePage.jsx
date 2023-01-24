@@ -93,9 +93,9 @@ function HomePage({onLogoutClick, context: { handleFeedback }}){
                     handleFeedback({ message: error.message, level: 'error' })
 
                     logger.warn(error.message)
-
                     return
                 }
+                loadNotes()
             })
         }catch (error){
             handleFeedback({ message: error.message, level: 'error' })

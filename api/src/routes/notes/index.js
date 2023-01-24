@@ -1,5 +1,6 @@
 module.exports = {
     createNoteHandler: require('./createNoteHandler'),
     retrieveNotesHandler: require('./retrieveNotesHandler'),
-    updateNoteTextHandler: require('./updateNoteTextHandler')
+    updateNoteTextHandler: require('./updateNoteTextHandler'),
+    deleteNoteHandler: require('./deleteNoteHandler')
 }

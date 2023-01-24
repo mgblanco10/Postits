@@ -6,7 +6,8 @@ function NoteList({notes, onDeleteNote, onUpdateNote}) {
 
     logger.info('return')
 
-    return <ul className="NoteList">
+    return <>
+    <ul className="NoteList">
         {notes && notes.map(note => <li className="NoteList__item" key={note.id}>
             <button className="NoteList__item-delete-button" onClick={() => onDeleteNote(note.id)}>x</button>
 
@@ -22,6 +23,7 @@ function NoteList({notes, onDeleteNote, onUpdateNote}) {
             }}>{note.text}</p>
         </li>)}
     </ul>
+    </>
 }
 
 export default NoteList

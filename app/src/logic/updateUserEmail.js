@@ -1,4 +1,5 @@
 import { EMAIL_REGEX } from './constants'
+const API_URL = process.env.REACT_APP_API_URL
 
 function updateUserEmail (token, newEmail, callback){
     
@@ -24,7 +25,7 @@ function updateUserEmail (token, newEmail, callback){
             callback(null)
     }
 
-    xhr.open('PATCH','https://b00tc4mp.herokuapp.com/api/v2/users')
+    xhr.open('PATCH', `${API_URL}/users`)
 
     xhr.setRequestHeader('Content-type', 'application/json')
     xhr.setRequestHeader('Authorization', `Bearer ${token}`)

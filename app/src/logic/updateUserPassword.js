@@ -1,3 +1,5 @@
+const API_URL = process.env.REACT_APP_API_URL
+
 function updateUserPassword(token, oldPassword, newPassword, newPasswordRepeat, callback) {
     if (typeof token !== 'string') throw new TypeError('Token is not a string')
     if (token.trim().length === 0) throw new Error('Token is empty or blank')
@@ -28,14 +30,14 @@ function updateUserPassword(token, oldPassword, newPassword, newPasswordRepeat, 
         else if (status === 204)
             callback(null)
     }
+ // request
 
-    xhr.open('PATCH', 'https://b00tc4mp.herokuapp.com/api/v2/users')
+ xhr.open('PATCH', `${API_URL}/users`)
 
-    xhr.setRequestHeader('Authorization', `Bearer ${token}`)
-    xhr.setRequestHeader('Content-type', 'application/json')
+ xhr.setRequestHeader('Authorization', `Bearer ${token}`)
+ xhr.setRequestHeader('Content-type', 'application/json')
 
-    const json = JSON.stringify({ oldPassword, password: newPassword })
-
-    xhr.send(json)
+ //const json2 = JSON.stringify({ notes: notes })
+ xhr.send(`{ "oldPassword": "${oldPassword}", "newPassword": "${newPassword}", "newPasswordRepeat": "${newPasswordRepeat}"}`)
 }
 export default updateUserPassword

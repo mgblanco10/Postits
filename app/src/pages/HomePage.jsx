@@ -45,8 +45,13 @@ function HomePage({onLogoutClick, context: { handleFeedback }}){
         }
 
         loadNotes()
+  
     }, [])
 
+    // useEffect(() => {
+    //     loadNotes()
+    //   }, [notes])
+  
     const loadNotes = () =>{
         try{
             retrieveNotes(sessionStorage.token, (error, notes)=>{
@@ -104,6 +109,7 @@ function HomePage({onLogoutClick, context: { handleFeedback }}){
             
         }
     }
+  
 
     const handleDeleteNote = noteId =>{
         try {
@@ -115,7 +121,7 @@ function HomePage({onLogoutClick, context: { handleFeedback }}){
 
                     return
                 }
-
+    
                 loadNotes()
             })
         } catch (error){

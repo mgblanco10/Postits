@@ -32,12 +32,13 @@ function updateUserPassword(token, oldPassword, newPassword, newPasswordRepeat, 
     }
  // request
 
- xhr.open('PATCH', `${API_URL}/users`)
+ xhr.open('PATCH', `${API_URL}/users/password`)
 
  xhr.setRequestHeader('Authorization', `Bearer ${token}`)
  xhr.setRequestHeader('Content-type', 'application/json')
 
- //const json2 = JSON.stringify({ notes: notes })
+// const json = JSON.stringify({oldPassword, newPassword, newPasswordRepeat})
+ // xhr.send(json)
  xhr.send(`{ "oldPassword": "${oldPassword}", "newPassword": "${newPassword}", "newPasswordRepeat": "${newPasswordRepeat}"}`)
 }
 export default updateUserPassword
